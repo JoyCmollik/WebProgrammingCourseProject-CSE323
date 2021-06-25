@@ -38,10 +38,10 @@
                         <td>{{ $mobile->gpu }}</td>
                         <td>{{ $mobile->display }}</td>
                         <td class="at_price"><span class="make_me_pink">$</span>{{ $mobile->price }}</td>
-                        <td>
+                        <td class="button_holder">
                             <a href="/mobiles/{{ $mobile->id }}/edit" class="edit_button">Edit</a>    
                         </td>
-                        <td>
+                        <td class="button_holder">
                             <form action="/mobiles/{{ $mobile->id }}" method="POST">
                                 @csrf
                                 @method('delete')
@@ -158,6 +158,10 @@
                 padding: 1em 2em;
             }
 
+            .button_holder {
+                padding: 1em 1.5em !important;
+            }
+
             .brand_name {
                 font-family: 'Lato', sans-serif;
                 text-transform: uppercase;
@@ -210,7 +214,7 @@
             .delete_button {
                 border: none;
                 font-family: 'Noto Sans', sans-serif;
-                padding: 0.2em 1.4em;
+                padding: 0.2em 1em;
                 background-color: #FF7597;
                 border-radius: 1em;
                 color: #151515;
