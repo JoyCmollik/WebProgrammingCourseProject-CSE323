@@ -67,15 +67,6 @@
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
-    
-            .container {
-                /* getting rid of predefined bootstrap paddings */
-                /* padding-right: var(--bs-gutter-x,0) !important;
-                padding-left: var(--bs-gutter-x,0) !important;
-                margin-right: 0 !important;
-                margin-left: 0 !important; */ */
-                /* /* other properties */
-            } 
 
             .header {
                 background: #282828;
@@ -83,6 +74,7 @@
                 width: 100% !important;
                 border-radius: 1em;
                 display: flex;
+                justify-content: center;
             }
 
             .header h1 {
@@ -112,7 +104,7 @@
                 background-color: #BB86FC;
                 padding: 0.5em 1.2em;
                 font-size: 1em;
-                border-radius: 1em;
+                border-radius: 0.28em;
                 transition: all 0.2s ease-in;
             }
 
@@ -187,15 +179,17 @@
                 text-decoration: none;
                 font-family: 'Noto Sans', sans-serif;
                 padding: 0.2em 1.4em;
-                background-color: #03DAC5;
-                color: #404040;
-                border-radius: 1em;
+                background: none;
+                color: #FFF;
+                border: 1.9px #03DAC5 solid;
+                border-radius: 0.28em;
                 transition: all 0.2s linear;
             }
 
             .edit_button:hover {
                 background-color: #18fce6;
-                color: #151515;
+                border-color: #18fce6;
+                color: #B3B3B3;
                 box-shadow: 1px 1px 10px 1px rgba(24,252,230,0.63);
                 -webkit-box-shadow: 1px 1px 10px 1px rgba(24,252,230,0.63);
                 -moz-box-shadow: 1px 1px 10px 1px rgba(24,252,230,0.63);
@@ -216,13 +210,15 @@
                 font-family: 'Noto Sans', sans-serif;
                 padding: 0.2em 1em;
                 background-color: #FF7597;
-                border-radius: 1em;
+                border: 1.9px #FF7597 solid;
+                border-radius: 0.28em;
                 color: #151515;
                 transition: all 0.2s linear;
             }
 
             .delete_button:hover {
                 background-color: #FF0266;
+                border-color: #FF0266;
                 color: #fff;
                 box-shadow: 1px 1px 10px 1px rgba(255,117,151,0.63);
                 -webkit-box-shadow: 1px 1px 10px 1px rgba(255,117,151,0.63);
@@ -241,20 +237,13 @@
                 border: none !important;
             }
 
-            .page-link:active {
-                background: #B3B3B3 !important;
-                color: #03DAC5 !important;
-            }
-
             .page-link:hover {
                 background: #B3B3B3 !important;
             }
 
             .page-item.active .page-link {
-                background-color: #B3B3B3 !important;
+                background-color: #474847 !important;
                 border-color: #FF7597 !important;
             }
-
-
 
         </style>

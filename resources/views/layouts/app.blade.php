@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Mobile Information Hub</title>
     {{-- bootstrap for default pagination --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     {{-- google fonts --}}
@@ -18,10 +18,6 @@
 </html>
 
 <style>
-    * {
-        box-sizing: border-box;
-    }
-
      body {
         font-family: 'Mukta', sans-serif;
         background: #121212;

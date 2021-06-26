@@ -79,13 +79,13 @@
     .header {
                 background: #121212;
                 padding: 0.7em;
-                width: 100% !important;
+                width: 64% !important;
                 border-radius: 1em;
                 display: flex;
+                justify-content: center;
             }
 
     .header h1 {
-            margin-left: ;
             /* font-family: 'Lato', sans-serif; */
             font-weight: 700;
             letter-spacing: 0.1em;
@@ -107,7 +107,7 @@
 
     .form_container {
         margin-top: 2.5em;
-        width: 55%;
+        width: 64%;
         background: #121212;
         height: 400px;
         padding: 1em 2.5em;
