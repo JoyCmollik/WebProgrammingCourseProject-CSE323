@@ -7,7 +7,12 @@
             <h1>Add a new mobile</h1>
         </div>
 
+
         <div class="form_container">
+            <div class="go-back">
+                <a href="/mobiles">Back To Home</a>
+            </div>
+
             <form action="/mobiles" method="POST">
                 @csrf
 
@@ -58,7 +63,7 @@
         @if ($errors->any())
                 <div class="error_list">
                     @foreach ($errors->all() as $error)
-                        <li class="error_list_item">{{ $error }}</li>
+                        <li class="error_list_item"><span><i class="fas fa-exclamation-circle"></i></span>{{ $error }}</li>
                     @endforeach
                 </div>
             @endif
@@ -76,45 +81,67 @@
         background: #282828 !important;
     }
 
-    .header {
-                background: #121212;
-                padding: 0.7em;
-                width: 64% !important;
-                border-radius: 1em;
-                display: flex;
-                justify-content: center;
-            }
-
-    .header h1 {
-            /* font-family: 'Lato', sans-serif; */
-            font-weight: 700;
-            letter-spacing: 0.1em;
-            font-size: 2em;
-        }
-            
-    .border_left {
-            background: #FF0266;
-            width: 4px;
-            margin-right: 0.8em;
-        }
-
-    .container {
+    .container{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+    }
+
+    .header {
+        padding: 0.7em;
+        width: 64% !important;
+        border-radius: 1em;
+        display: flex;
+        justify-content: center;
+        background: #121212;
+    }
+
+    .header h1 {
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        font-size: 2em;
+    }
+            
+    .border_left {
+        width: 4px;
+        margin-right: 0.8em;
+        background: #FF0266;
     }
 
     .form_container {
         margin-top: 2.5em;
         width: 64%;
         background: #121212;
-        height: 400px;
+        height: 470px;
         padding: 1em 2.5em;
         text-align: center;
         border-radius: 1em;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .go-back a{
+        font-family: 'Noto Sans' , sans-serif;
+        text-decoration: none;
+        color: #FFFFFF;
+        background-color: #none;
+        padding: 0.5em 1.2em;
+        font-size: 1em;
+        border: 1.9px solid #FFFFFF;
+        border-radius: 0.28em;
+        margin-top: 10px;
+        transition: all 0.2s ease-in;
+    }
+
+    .go-back a:hover {
+        background-color: #7951aa;
+        color: #fff;
+        box-shadow: 0px 1px 19px 0px rgba(187,134,252,0.73);
+        -webkit-box-shadow: 0px 1px 19px 0px rgba(187,134,252,0.73);
+        -moz-box-shadow: 0px 1px 19px 0px rgba(26, 4, 9, 0.73);
     }
 
     .input_group_container {
@@ -192,15 +219,22 @@
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        max-height: 50px;
     }
 
     .error_list_item {
         list-style-type: none;
-        background: #FF7597;
+        background: rgba(255, 26, 0, 0.1);
         border-radius: 1em;
-        padding: 0.4em 1em;
-        color: FFF;
+        padding: 0.4em 0.9em;
+        color: #FFF;
         margin: 0.5em;
+        font-size: 14.5px
+    }
+
+    .error_list_item span {
+        color: rgba(255, 26, 0, 0.9);
+        margin-right: 4px;
     }
 
 

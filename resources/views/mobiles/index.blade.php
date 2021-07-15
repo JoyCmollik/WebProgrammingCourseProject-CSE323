@@ -30,7 +30,7 @@
             <tbody>
                 @foreach ($mobiles as $mobile)
                     <tr>
-                        <td class="brand_name">{{ $mobile->brand }}</td>
+                        <td id="brand_name">{{ $mobile->brand }}</td>
                         <td>{{ $mobile->model }}</td>
                         <td>{{ $mobile->processor }}</td>
                         <td>{{ $mobile->ram }}GB</td>
@@ -133,13 +133,11 @@
             }
 
             .table_content th {
-                padding: 1em 2em;
+                text-align: left;
+                font-size: 15px;
+                padding: 1em 2em 1em 0.8em;
                 text-transform: uppercase;
                 letter-spacing: 0.2em;
-            }
-
-            .table_content tbody tr td {
-                color: #B3B3B3;
             }
 
             .table_content tbody tr:nth-of-type(even) {
@@ -147,32 +145,31 @@
             }
 
             .table_content td {
-                padding: 1em 2em;
+                font-size: 17px;
+                padding: 1em 0.8em;
+                color: #B3B3B3;
             }
 
             .button_holder {
                 padding: 1em 1.5em !important;
             }
 
-            .brand_name {
-                font-family: 'Lato', sans-serif;
+            #brand_name {
                 text-transform: uppercase;
-                color: #fff !important;
+                color: #fff;
+                font-size: 15px;
+                letter-spacing: 0.1em;
             }
 
             .at_price {
-                color: #FFF !important;
-                border-bottom: 2.5px #FF0266 solid;
                 text-align: center;
+                color: #FFF !important;
+                border-bottom: 2.5px solid #FF0266;
             }
 
             .make_me_pink {
                 color: #FF0266;
             }
-
-            /* .at_price div {
-                border-bottom: 4px #FF0266 solid;
-            } */
 
             .edit_button {
 
